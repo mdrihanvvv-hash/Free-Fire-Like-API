@@ -1,9 +1,22 @@
 import requests
 import json
 
-UIDPASS_FILE = "uidpass.json"
+UIDPASS_FILE =[
+    {
+        "uid": "4301282558",
+        "password": "FAFD49D6E650341E18960FA022E0D95331477CD8CDB392CBD13B6FB7B38B98BF"
+    },
+    {
+        "uid": "4168582484",
+        "password": "09D2A838FBF8870D2944E9A06209A58F8F6C5763EB1CF77C456D4E798917E302"
+    }
+    {
+        "uid": "14916507310",
+        "password": "UDITGAMING_CCBP7"
+    }
+]
 TOKEN_FILE = "tokens.json"
-API_URL = "https://xtytdtyj-jwt.up.railway.app/token"
+API_URL = "https://jwttoken-ten.vercel.app/token"
 
 def read_uidpass():
     with open(UIDPASS_FILE, "r", encoding="utf-8") as f:
